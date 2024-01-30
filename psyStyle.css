@@ -1,0 +1,16 @@
+/* psyStyle.css */
+body {
+    background-color: magenta;
+    color: lime;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
