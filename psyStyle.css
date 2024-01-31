@@ -1,16 +1,36 @@
-/* psyStyle.css */
 body {
-    background-color: magenta;
-    color: lime;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    animation: rotation 5s infinite linear;
+    animation: spin 5s linear infinite, colorChange 10s ease-in-out infinite;
+    transform-origin: center;
+    filter: blur(2px);
+    background-color: #ff00ff;
+    color: #00ff00;
 }
 
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
+
+@keyframes colorChange {
+    0%, 100% { background-color: #ff00ff; color: #00ff00; }
+    50% { background-color: #00ff00; color: #ff00ff; }
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    text-shadow: 2px 2px 4px #0000ff;
+}
+
+a {
+    color: #ff0;
+    text-decoration: none;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Ajoutez d'autres styles et animations selon vos préférences */
+
