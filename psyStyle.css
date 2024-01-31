@@ -1,5 +1,5 @@
 body {
-    animation: spin 5s linear infinite, colorChange 10s ease-in-out infinite;
+    animation: colorChange 10s ease-in-out infinite;
     transform-origin: center;
     filter: blur(2px);
     background-color: #ff00ff;
