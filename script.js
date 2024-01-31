@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('styleSheet').href = 'psyStyle.css';
             setTimeout(() => {
                 document.getElementById('styleSheet').href = 'style.css';
+                clickCount = 0;
             }, 10000); // 10000 millisecondes = 10 secondes
         }
     });
